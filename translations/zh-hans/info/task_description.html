@@ -1,0 +1,59 @@
+<!-- Describe task in general -->
+
+<p style="float: left; margin: 10px;">
+    <a href="https://www.vecteezy.com/free-vector/calculator"><img title="example" src="{{MEDIA}}calc.png" alt="example" style="max-height: 200px"/></a> 
+</p>
+<p>
+    <i>Curta 计算器开发于 1948 年，虽然价格昂贵，但因其便携性而广受欢迎。这种纯机械的手持设备可以进行加、减、乘、除运算。到 20 世纪 70 年代初，电子袖珍计算器结束了机械计算器的生产，但 Curta 计算器仍然是很受欢迎的收藏品。<a href="https://en.wikipedia.org/wiki/Calculator" target="_blank">Find more on wikipedia page...</a></i>
+</p>
+<p>
+    在本系列任务中，您将制作一个初级计算器。
+</p>
+<p>
+    作为输入，您需要按下一串按键，而作为该功能的结果，您需要显示按下最后一个按键时屏幕上会显示什么。注意，这并不总是表达式的结果。实际上，使用实物计算器或应用程序确实有助于你捕捉边缘情况。
+</p>
+<p>
+    在第五个任务中，您的函数应在附加运算的情况下正常工作： *, /、//（整除）、%（模）和 **（幂）以及它们与"="的组合。
+</p>
+<p>
+    <strong>预期行为</strong>
+    <ul>
+        <li><i>应删除开头的零，将仅有零的数字转换为单个零；</i></li>
+        <li><i>数字间的 +- 符号应取最后一个；</i></li>
+        <li><i>"=="表示重复上次操作；</i></li>
+        <li><i>"+="或"-="--在组合前对数字（或运算结果）进行加减运算（将数字加倍或减去本身）；</i></li>
+        <li><i>计算器忽略在第 5 位之后输入的数字；</i></li>
+        <li><i>数字 &lt; 0 的"-"不占位数；</i></li>
+        <li><i>如果 abs(结果)大于 99999，结果显示为 "错误"；</i></li>
+        <li><i>对于浮点数，如果 abs(结果) 的整数部分大于 9999，则结果显示为 "错误"；</i></li>
+        <li><i>对于 float，如果数字的总长度超过 5 位数，则应四舍五入到 5 位数（1.23456 -&gt; 1.235）；</i></li>
+        <li><i>对于浮点数，应去掉开头和尾部的零（如果可能，去掉". "之前的零）： 0.1200 -&gt; .12 , 123.00 -&gt; 123..应在四舍五入后进行： 1.000123 -&gt; 1. .只有在输入数字结束后（按下非数字字符）才应删除尾数零。</i></li>
+    </ul>
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>输入：</strong>字符串。
+</p>
+<p>
+   <strong>输出： 字符串</strong>字符串。
+</p>
+<p>
+    <strong>示例：字符串</strong>
+</p>
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<p class="for_info_only">
+
+    <strong>如何使用</strong>
+    <i>计算器被广泛使用。了解其输入和输出的原理既有趣又有用。</i>
+</p>
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p>
+    <strong>前提条件：</strong>
+    <i>允许使用的字符：数字（0-9）、点（.）、符号 +、-、=、*、/、//、%、** 及其组合（+=、+-、==、%= 等）。整数不得超过 5 位，浮点数不得超过 4 位。</i>
+</p>
